@@ -55,7 +55,7 @@ Examples (one fold; folds 0-4):
 
 ```bash
 python baseline/code/run_supervised_fraction.py --data_dir data/preprocessed_v5_patches --raw_dir data/Task07_Pancreas \
-  --fold 0 --frac 10 --inner_val 22 --blend gaussian --epochs 150 --output_dir baseline/models/clean_sup_10_es30
+  --fold 0 --frac 10 --inner_val 22 --blend gaussian --epochs 150 --es_start 30 --output_dir baseline/models/clean_sup_10_es30
 python baseline/code/run_ssl_uamt_5fold.py --data_dir data/preprocessed_v5_patches --raw_dir data/Task07_Pancreas \
   --unlabeled_data_dir data/preprocessed_v7_labelfree --fold 0 --frac 10 --inner_val 22 --blend gaussian --epochs 150 \
   --output_dir baseline/models/clean_uamt_10
