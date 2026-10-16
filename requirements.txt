@@ -1,0 +1,11 @@
+# Python 3.10.12, NVIDIA V100 32 GB, CUDA via the pip nvidia-* wheels
+tensorflow==2.13.0
+keras==2.13.1
+numpy==1.26.4
+scipy==1.15.3
+scikit-learn==1.7.2
+scikit-image==0.25.2
+nibabel==5.3.3
+simpleitk==2.5.3
+pandas==2.3.3
+matplotlib==3.7.1
