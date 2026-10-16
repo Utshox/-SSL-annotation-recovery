@@ -63,7 +63,7 @@ fig.tight_layout(); fig.savefig(OUT + "method_forest_corrected.png", dpi=300, bb
 H = {}
 for a in ["csup10", "cuamt10", "csup25", "cuamt25", "csup50", "cuamt50", "cmt50", "ccps50", "csup100"]:
     d = {}
-    for f in glob.glob(f"baseline/logs/hd95_5fold/partial_{a}_fold*_gaussian_lcc.jsonl"):
+    for f in glob.glob(f"baseline/logs/{'hd95_5fold_es30' if a == 'csup10' else 'hd95_5fold'}/partial_{a}_fold*_gaussian_lcc.jsonl"):  # 10% primary control = es30
         for l in open(f): rr = json.loads(l); d[rr["case"]] = rr
     H[a] = d
 HK = sorted(H["csup50"])
